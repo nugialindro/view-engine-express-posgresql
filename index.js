@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-app.get("/produk/", (req, res) => {
+app.get("/produk", (req, res) => {
   DataProduk.findAll().then((DataProduk) => {
     res.render("./index", {
       DataProduk,

@@ -14,51 +14,70 @@ img {
   margin: 20px auto 20px auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 .card {
   display: flex;
   justify-items: center;
-  /* align-items: center; */
   flex-direction: column;
-  /* background-color: dodgerblue; */
   color: black;
   padding: 0.8rem;
   height: 100%;
-  /* line-height: 16px; */
-  /* border: 1px solid black; */
+
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cards {
-  /* display: flex; */
   justify-content: space-between;
   max-width: 900px;
   margin: 0 auto;
   display: grid;
   gap: 40px 25px;
-  /* padding: 1rem; */
 }
 
 .row {
   width: 900px;
+  height: 70vh;
   justify-content: center;
   display: grid;
   grid-template-columns: 50% 50%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .column {
   padding: 16px;
   height: 250px;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 /* Screen larger than 600px? 2 column */
-@media (min-width: 600px) {
+@media (min-width: 100px) {
   .cards {
     grid-template-columns: repeat(2, 2fr);
   }
 
   .card {
     /* line-height: 5px; */
+  }
+
+  .row {
+    width: 100%;
   }
 
   h1 {
@@ -70,6 +89,10 @@ img {
 @media (min-width: 900px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .row {
+    width: 900px;
   }
 
   h1 {
