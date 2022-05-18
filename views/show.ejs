@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title><%= nama_produk %></title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <img src="<%= gambar_produk %>" />
+      </div>
+      <div class="column">
+        <h1><%= nama_produk %></h1>
+        <h2>Rp.<%= harga_produk %></h2>
+        <h3>Details</h3>
+        <p><%= deskripsi_produk %></p>
+        <h1><% kategori_id %></h1>
+      </div>
+    </div>
+  </body>
+</html>

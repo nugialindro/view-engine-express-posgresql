@@ -1,0 +1,78 @@
+body {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p.deskripsi-produk {
+  font-size: 14px;
+}
+
+img {
+  margin: 20px auto 20px auto;
+}
+
+.card {
+  display: flex;
+  justify-items: center;
+  /* align-items: center; */
+  flex-direction: column;
+  /* background-color: dodgerblue; */
+  color: black;
+  padding: 0.8rem;
+  height: 100%;
+  /* line-height: 16px; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cards {
+  /* display: flex; */
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px 25px;
+  /* padding: 1rem; */
+}
+
+.row {
+  width: 900px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.column {
+  padding: 16px;
+  height: 250px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .card {
+    /* line-height: 5px; */
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
